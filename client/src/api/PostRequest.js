@@ -1,6 +1,6 @@
 import axios from "axios";
-
-const API = axios.create({ baseURL: "http://localhost:8000" });
+import url from '../consts.js';
+const API = axios.create({ baseURL: url });
 
 export const getTimeLine = (id) => API.get(`/post/${id}/timeline`);
 
