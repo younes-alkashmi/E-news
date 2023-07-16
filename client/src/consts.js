@@ -1,1 +1,2 @@
-export const url = 'https://e-news-apiz.onrender.com';
+const url = 'https://e-news-apiz.onrender.com';
+export default url;
