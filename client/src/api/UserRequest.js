@@ -1,6 +1,7 @@
 import axios from "axios";
+import url from '../../consts.js';
 
-const API = axios.create({ baseURL: "http://localhost:8000" });
+const API = axios.create({ baseURL: url });
 
 export const getUser = (userId) => API.get(`/user/${userId}`);
 export const getSuggestions = (userId) =>
