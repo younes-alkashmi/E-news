@@ -113,7 +113,7 @@ function App() {
             element={user ? <UserProfile /> : <Navigate to="../auth" />}
           />
           <Route
-            path="dashboard"
+            path="/dashboard"
             element={admin ? <Dashboard /> : <AdminAuth />}
           />
           <Route
