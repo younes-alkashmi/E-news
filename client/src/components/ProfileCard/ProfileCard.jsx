@@ -15,7 +15,7 @@ function ProfileCard({ location }) {
           src={
             user.coverPicture
               ? serverPublic + user.coverPicture
-              : serverPublic + "default_cover.jpg"
+              : serverPublic + "/default_cover.jpg"
           }
           alt=""
         />
@@ -23,7 +23,7 @@ function ProfileCard({ location }) {
           src={
             user.profilePicture
               ? serverPublic + user.profilePicture
-              : serverPublic + "male_avatar.png"
+              : serverPublic + "/male_avatar.png"
           }
           alt=""
         />
