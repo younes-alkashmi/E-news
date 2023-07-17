@@ -47,8 +47,8 @@ export const UserReg = async (req, res) => {
 
   try {
     await user.save();
-    res.status(200).json({ user });
     sendConfirmEmail(user.username, user.email, token);
+    res.status(200).json({ user });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
