@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors({origin: 'https://e-news-imae.onrender.com/'}));
+app.use(cors());
 dotenv.config();
 
 // To serve images to public folder
