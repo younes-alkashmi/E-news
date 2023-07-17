@@ -96,21 +96,21 @@ function App() {
               ) : user ? (
                 <Home />
               ) : (
-                <Navigate to="../auth" />
+                <Navigate to="auth" />
               )
             }
           />
           <Route
             path="/auth"
-            element={user ? <Navigate to="../home" /> : <Auth />}
+            element={user ? <Navigate to="home" /> : <Auth />}
           />
           <Route
             path="/profile/:id"
-            element={user ? <Profile /> : <Navigate to="../auth" />}
+            element={user ? <Profile /> : <Navigate to="auth" />}
           />
           <Route
             path="/userprofile/:id"
-            element={user ? <UserProfile /> : <Navigate to="../auth" />}
+            element={user ? <UserProfile /> : <Navigate to="auth" />}
           />
           <Route
             path="/dashboard"
