@@ -146,7 +146,7 @@ const sendConfirmEmail = (username, email, confirmCode) => {
   <h1>التحقق من الحساب</h1>
   <h2>مرحبا ${username}</h2>
   <p>الرجاء الضغط على الزر الموضح للتحقق من حسابك</p>
-  <a href=http://localhost:3000/confirm/${confirmCode}> اضغط هنا </a>
+  <a href=https://e-news-imae.onrender.com/confirm/${confirmCode}> اضغط هنا </a>
   </div>`;
 
   transporter.sendMail(mailOptions, function (error, info) {

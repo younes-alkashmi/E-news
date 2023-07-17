@@ -30,7 +30,7 @@ function Welcome() {
         <p>
           <span className="icon-block">{verified ? "✔" : "✖"} </span>
         </p>{" "}
-        <a href="http://localhost:3000/" className="button wel-btn">
+        <a href="https://e-news-imae.onrender.com/" className="button wel-btn">
           {verified ? "تسجيل الدخول" : "تسجيل حساب"}
         </a>
       </div>
