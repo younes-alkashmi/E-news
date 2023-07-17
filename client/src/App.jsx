@@ -113,7 +113,7 @@ function App() {
             element={user ? <UserProfile /> : <Navigate to="../auth" />}
           />
           <Route
-            path="https://e-news-imae.onrender.com/dashboard"
+            path="/dashboard"
             element={admin ? <Dashboard /> : <AdminAuth />}
           />
           <Route
