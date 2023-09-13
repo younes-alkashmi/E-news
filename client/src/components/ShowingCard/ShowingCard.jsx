@@ -19,7 +19,7 @@ function ShowingCard() {
       dispatch(getUsers());
       const ids = users.map((user) => user._id);
       users = users?.filter((user) => {
-        if (ids.includes(user._id)) return user;
+        if (!ids.includes(user._id)) return user;
       });
       setUsrs(users);
     };
