@@ -18,10 +18,10 @@ function ShowingCard() {
     const fetchUsers = async () => {
       dispatch(getUsers());
       const ids = users.map((user) => user._id);
-      users = users?.filter((user) => {
+      const arr = users?.filter((user) => {
         if (!ids.includes(user._id)) return user;
       });
-      setUsrs(users);
+      setUsrs(arr);
     };
     fetchUsers();
   }, []);
