@@ -11,7 +11,7 @@ const UserCard = lazy(() => import("../UserCard/UserCard"));
 function ShowingCard() {
   const { user } = useSelector((state) => state.AuthReducer.authData);
   let { users } = useSelector((state) => state.UserReducer);
-  const [usrs, setUsrs] = useState(users);
+  const [usrs, setUsrs] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
