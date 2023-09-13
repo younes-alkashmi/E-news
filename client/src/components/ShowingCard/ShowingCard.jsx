@@ -4,8 +4,8 @@ import React, { lazy, useEffect, useState } from "react";
 import { getUsers } from "../../actions/UserAction";
 import { useSelector, useDispatch } from "react-redux";
 import { getSuggestions } from "../../api/UserRequest";
-import UserCard from "../UserCard/UserCard";
-// const UserCard = lazy(() => import("../UserCard/UserCard"));
+// import UserCard from "../UserCard/UserCard";
+const UserCard = lazy(() => import("../UserCard/UserCard"));
 
 function ShowingCard() {
   const { user } = useSelector((state) => state.AuthReducer.authData);
