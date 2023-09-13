@@ -20,7 +20,6 @@ function ShowingCard() {
       const arr = users?.filter((u) => {
         return user._id != u._id;
       });
-      console.log('array => ' + arr );
       setUsrs(arr);
     };
     fetchUsers();
