@@ -16,6 +16,7 @@ function ShowingCard() {
 
   useEffect(() => {
     const fetchUsers = async () => {
+      console.log('started')
       dispatch(getUsers());
       const ids = users.map((user) => user._id);
       console.log('ids => ' + ids);
