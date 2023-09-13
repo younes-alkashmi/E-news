@@ -17,10 +17,8 @@ function ShowingCard() {
   useEffect(() => {
     const fetchUsers = async () => {
       dispatch(getUsers());
-      const ids = users.map((user) => user._id);
-      console.log('ids => ' + ids);
       const arr = users?.filter((u) => {
-        if (user._id !== u._id) return user;
+        return user._id != u._id;
       });
       console.log('array => ' + arr );
       setUsrs(arr);
