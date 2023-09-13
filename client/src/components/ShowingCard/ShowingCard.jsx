@@ -5,18 +5,18 @@ import { getUsers } from "../../actions/UserAction";
 import { useSelector, useDispatch } from "react-redux";
 import { getSuggestions } from "../../api/UserRequest";
 import {getAllUsers} from "../../api/UserRequest.js"
-// import UserCard from "../UserCard/UserCard";
-const UserCard = lazy(() => import("../UserCard/UserCard"));
+import UserCard from "../UserCard/UserCard";
+// const UserCard = lazy(() => import("../UserCard/UserCard"));
 
 function ShowingCard() {
   const { user } = useSelector((state) => state.AuthReducer.authData);
-  let { users } = useSelector((state) => state.UserReducer);
-  const [usrs, setUsrs] = useState([]);
+  const { users } = useSelector((state) => state.UserReducer);
+  const [usrs, setUsrs] = useState(users);
   const dispatch = useDispatch();
 
   useEffect(() => {
-      console.log('started')
     const fetchUsers = async () => {
+      console.log('started')
       dispatch(getUsers());
       const ids = users.map((user) => user._id);
       console.log('ids => ' + ids);
